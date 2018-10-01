@@ -14,16 +14,16 @@ import org.junit.BeforeClass;
  */
 public class FirstTest {
 
-    @BeforeClass
-    public static void beforeClass() {
-        //configuracao do proxy
-        RestAssured.proxy = ProxySpecification
-                .host("10.20.10.50")
-                .withPort(3128)
-                .withAuth("username", "password");    
-        
-        RestAssured.registerParser("text/plain", Parser.JSON);
-    }
+//    @BeforeClass
+//    public static void beforeClass() {
+//        //configuracao do proxy
+//        RestAssured.proxy = ProxySpecification
+//                .host("10.20.10.50")
+//                .withPort(3128)
+//                .withAuth("a1634062", "bqxbtv75");    
+//        
+//        RestAssured.registerParser("text/plain", Parser.JSON);
+//    }
     
     @Test
     public void testHealthCheck() {
